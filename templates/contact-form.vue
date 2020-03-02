@@ -1,14 +1,11 @@
 <template>
-    <div>{{'hello -- from contact | form' | slugify}}</div>
+  <div>{{ "hello -- from contact | form" | slugify }}</div>
 </template>
 
 <script>
 export default {
-    name: 'contact-form'
-    
+  name: "ContactForm"
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

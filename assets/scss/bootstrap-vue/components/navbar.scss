@@ -1,0 +1,9 @@
+.navbar-dark .navbar-toggler {
+    border: 4px solid #ffffff !important;
+    color: #fff;
+}
+.navbar-dark .navbar-toggler-icon {
+    background: url(~assets/img/common/hamburger-icon.svg) !important;
+    background-size: cover !important;
+    transform: scaleX(1.2);
+}

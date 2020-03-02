@@ -9,6 +9,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
+$gray-1000: #181818 !default;
 $black: #000 !default;
 
 // Base colors definitions
@@ -31,7 +32,7 @@ $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
-$dark: $gray-800 !default;
+$dark: $gray-1000 !default;
 
 // This table defines the theme colors (variant names)
 $theme-colors: () !default;

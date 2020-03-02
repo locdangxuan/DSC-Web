@@ -1,11 +1,20 @@
 {
-  "home": {
-    "title": "Chào mừng",
-    "lang": "Việt",
-    "introduction": "Đây là một đoạn giới thiệu bằng Tiếng Việt.",
+  "common": {
     "navbar": "Đây là thanh điều hướng",
+    "introduction": "Giới thiệu",
+    "contact": "Liên hệ",
     "header": "Đây là một header",
     "sidebar": "Đây là một sidebar",
-    "footer": "Mẫu website này được làm bởi thecodeorigin.com"
+    "footer": {
+      "title": "Developer Student Club | Đại học Bách khoa Đà Nẵng"
+    }
+  },
+  "home": {
+    "lang": "Tiếng Việt",
+    "home": "Trang chủ",
+    "blogs": "Blogs",
+    "events": "Sự kiện",
+    "products": "Sản phẩm",
+    "team": "Đội ngũ"
   }
 }

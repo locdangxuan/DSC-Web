@@ -1,11 +1,20 @@
 {
-  "home": {
-    "title": "Welcome",
-    "lang": "Eng",
-    "introduction": "This is an introduction in English.",
+  "common": {
     "navbar": "This is a navbar",
+    "introduction": "Introduction",
+    "contact": "Contact",
     "header": "This is a header",
     "sidebar": "This is a sidebar",
-    "footer": "This starter template is made by thecodeorigin.com"
+    "footer": {
+      "title": "Developer Student Club chapter Danang University of Science and Technology "
+    }
+  },
+  "home": {
+    "lang": "English",
+    "home": "Home",
+    "blogs": "Blogs",
+    "events": "Events",
+    "products": "Products",
+    "team": "Team"
   }
 }

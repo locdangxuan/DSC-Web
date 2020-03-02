@@ -1,4 +1,4 @@
 export default () => ({
-    locales: ['en', 'vi'],
-    locale: 'vi',
+  locales: ["en", "vi"],
+  locale: "vi"
 })
