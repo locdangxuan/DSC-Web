@@ -29,21 +29,23 @@ export default {
 }
 .events-button-label {
   color: white;
-  font-size: 48px;
+  font-size: 24px;
+  font-family: Itim;
   font-weight: bold;
   text-align: center;
   position: absolute;
-  top: 0;
-  left: 50%;
-  opacity: 0;
-  transform: translate(0%, 100%);
+  top: 50%;
+  left: 100%;
+  opacity: 0.4;
+  transform: translate(0%, 0%);
   transition-duration: 0.3s;
 }
 .events-button:hover {
   transform: scale(1) translate(50%, 12.5%);
   .events-button-label {
     opacity: 1;
-    transform: translate(100%, 100%);
+    font-size: 48px;
+    transform: translate(0%, -50%);
   }
 }
 .events-button-img {

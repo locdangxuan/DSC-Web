@@ -23,13 +23,18 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["~/assets/scss/bootstrap-vue/custom.scss", "~/assets/scss/main.scss"],
+  css: [
+    "~/assets/scss/bootstrap-vue/custom.scss",
+    "~/assets/scss/main.scss",
+    "~/assets/scss/transitions.scss"
+  ],
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
     // Plugins
     "~/plugins/i18n.js",
+    "~/plugins/ProLink.js",
     // Utilities
     "~/utils/bus.js", // Event bus
     "~/utils/filters.js", // Filters for displaying text

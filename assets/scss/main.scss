@@ -1,3 +1,62 @@
+@font-face {
+    font-family: 'Itim';
+    src: url(~assets/fonts/Itim.ttf);
+}
+// Open Sans
+@font-face {
+    font-family: 'Open Sans';
+    src: url(~assets/fonts/Open_Sans_Light.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(~assets/fonts/Open_Sans.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(~assets/fonts/Open_Sans_SemiBold.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(~assets/fonts/Open_Sans_SemiBold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(~assets/fonts/Open_Sans_Bold.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(~assets/fonts/Open_Sans_ExtraBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(~assets/fonts/Open_Sans_ExtraBold.ttf);
+    font-weight: bolder;
+}
+// End Open Sans
+// Sofia Pro Soft
+@font-face {
+    font-family: 'Sofia';
+    src: url(~assets/fonts/Sofia_Pro_Soft_light.ttf);
+}
+@font-face {
+    font-family: 'Sofia';
+    src: url(~assets/fonts/Sofia_Pro_Soft_Bold.ttf);
+    font-weight: bold;
+}
+* {
+    font-family: 'Sofia';
+}
+// End Sofia Pro
+
+.font-itim {
+    font-family: Itim !important;
+}
 .stick-to-bottom {
     // So it can't be hidden by footer
     bottom: 32px;

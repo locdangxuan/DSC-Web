@@ -1,18 +1,18 @@
 <template>
   <b-container fluid class="home-page p-0">
     <Title />
-    <nuxt-link to="/blogs">
+    <ProLink :delay="1000" :to="'/blogs'" :emit="'igniteRocket'">
       <BlogsButton />
-    </nuxt-link>
-    <nuxt-link to="/events">
+    </ProLink>
+    <ProLink :delay="1000" :to="'/events'" :emit="'igniteRocket'">
       <EventsButton />
-    </nuxt-link>
-    <nuxt-link to="/products">
+    </ProLink>
+    <ProLink :delay="1000" :to="'/products'" :emit="'igniteRocket'">
       <ProductsButton />
-    </nuxt-link>
-    <nuxt-link to="/team">
+    </ProLink>
+    <ProLink :delay="1000" :to="'/team'" :emit="'igniteRocket'">
       <TeamButton />
-    </nuxt-link>
+    </ProLink>
   </b-container>
 </template>
 
@@ -27,8 +27,6 @@ export default {
     TeamButton: () => import("~/components/Home/TeamButton.vue"),
     Title: () => import("~/components/Home/Title.vue")
   },
-  created() {},
-  methods: {},
   head() {
     return {
       title: "Home page",
