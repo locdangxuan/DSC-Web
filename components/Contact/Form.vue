@@ -8,7 +8,9 @@
         <div class="background ">
           <span class="icon" />
         </div>
-        <b-form-input class="input-field" name="name" />
+        <div class="form-data">
+          <b-form-input class="input-field" name="name" />
+        </div>
       </div>
       <div />
     </div>
@@ -19,14 +21,18 @@
             <span class="icon-email" />
           </span>
         </div>
-        <b-form-input class="input-field" name="email" />
+        <div class="form-data">
+          <b-form-input class="input-field" name="email" />
+        </div>
       </div>
       <div />
     </div>
-    <textarea class="content-form" rows="4" cols="8" />
-    <b-button class="button-submit">
-      SEND
-    </b-button>
+    <div class="form">
+      <textarea class="content-form" rows="4" cols="8" />
+      <b-button class="button-submit">
+        SEND
+      </b-button>
+    </div>
   </div>
 </template>
 
@@ -38,31 +44,41 @@ export default {
 
 <style lang="scss" scoped>
 .content {
-  width: 400px;
+  width: 60%;
   height: fit-content;
-  margin: 10% auto;
+  margin: 15% auto;
+  position: relative;
+  z-index: 1;
 }
 .title-form {
   color: white;
-  font-size: 52px;
+  font-size: 42px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 8%;
+  height: 20%;
 }
 .form {
   text-align: center;
   margin-bottom: 12%;
+  position: relative;
+}
+.form-data {
+  display: block;
+  margin-left: 12%;
 }
 .input-container {
-  display: flex;
-  width: 100%;
+  position: relative;
+  width: auto;
+  height: auto;
 }
 .background {
   background: url("~assets/img/common/Rectangle-193.svg");
   background-size: cover;
-  width: 12%;
-  height: 50px;
-  position: relative;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  float: left;
 }
 .icon {
   background: url("~assets/img/common/Person.svg");
@@ -90,17 +106,14 @@ export default {
   width: 100%;
   height: 50%;
   position: absolute;
-  top: 8%;
+  top: 7%;
 }
-
 .input-field {
-  width: 90%;
   background-color: grey;
-  outline: none;
-  border: 3px solid #424242;
+  border: 2px solid #424242;
   cursor: pointer;
   color: white;
-  font-size: 25px;
+  font-size: 22px;
 }
 .input-field:focus {
   border: 2px solid #424242;
@@ -118,5 +131,19 @@ export default {
   font-weight: bold;
   text-align: center;
   margin-top: 10%;
+}
+@media (max-width: 992px) {
+  .container {
+    width: 40%;
+    height: 40%;
+    position: relative;
+  }
+  .content {
+    width: 100%;
+    height: fit-content;
+    margin: 20% auto;
+    position: relative;
+    z-index: 1;
+  }
 }
 </style>

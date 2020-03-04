@@ -1,78 +1,88 @@
 <template>
-  <b-row class="container">
-    <b-col lg="7" class="contact-form">
+  <div class="container">
+    <div class="form">
       <FormContact />
-      <div class="contact-icon-space-shuttle-img" />
-    </b-col>
-    <b-col lg="5" class="map-layout">
-      <iframe
-        class="gmap_canvas"
-        width="100%"
-        height="100%"
-        src="https://maps.google.com/maps?q=dai%20hoc%20bach%20khoa%20da%20nang&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        scrolling="no"
-        marginheight="0"
-        marginwidth="0"
-      />
-    </b-col>
-    <FormInfor />
-  </b-row>
+    </div>
+    <div class="space-icon">
+      <SpaceIcon />
+    </div>
+    <div class="map">
+      <MapLayout />
+    </div>
+    <div class="info">
+      <Infor />
+    </div>
+  </div>
 </template>
-
 <script>
 export default {
   name: "ContactForm",
   components: {
     FormContact: () => import("~/components/Contact/Form.vue"),
-    FormInfor: () => import("~/components/Contact/Infor.vue")
+    SpaceIcon: () => import("~/components/Contact/Space.vue"),
+    MapLayout: () => import("~/components/Contact/Map.vue"),
+    Infor: () => import("~/components/Contact/Infor.vue")
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .container {
-}
-.contact-form {
-  height: 100%;
   width: 100%;
-  position: fixed;
-  z-index: 1;
-}
-.contact-icon-space-shuttle-img {
-  background: url("~assets/img/common/space-shuttle-icon.svg");
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  background-size: cover;
-  position: absolute;
-  width: 270px;
-  height: 370px;
-  bottom: 30px;
-  z-index: -1;
-}
-.map-layout {
   height: 100%;
-  overflow: hidden;
-  position: absolute;
-  right: 0px;
-  transition-duration: 2.5s;
 }
-.gmap_canvas {
+.form {
+  width: 40%;
+  height: auto;
+  margin: 4px solid red;
   position: absolute;
+  left: 10%;
+}
+.space-icon {
+  position: absolute;
+  z-index: 0;
+  bottom: 0%;
+  left: 0;
+}
+.map {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  right: 0;
+  transition-duration: 0.5s;
+}
+.info {
+  position: absolute;
+  height: 100%;
+  width: 40%;
 }
 @media (max-width: 992px) {
   .container {
-    max-width: 922px;
-    position: unset;
-    margin: 0;
-  }
-  .contact-form {
+    width: 100%;
+    height: fit-content;
     position: relative;
+    height: 100%;
   }
-  .map-layout {
+  .form {
+    width: 80%;
+    float: left;
     position: relative;
+    margin-bottom: 10%;
   }
-  .gmap_canvas {
+  .space-icon {
     position: relative;
+    transition-duration: 0.5s;
+  }
+  .map {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    transition-duration: 0.5s;
+  }
+  .info {
+    position: absolute;
+    height: 0%;
+    width: 40%;
   }
 }
 </style>

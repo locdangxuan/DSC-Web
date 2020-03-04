@@ -4,7 +4,6 @@
       CONTACT INFORMATION
     </div>
     <b-card
-      header="Default"
       :class="containerstatus"
       g-variant="dark"
       style="position: fixed; z-index: 2; transition-duration: 0.3s; height: 32%; top: 25%; background-color: grey"
@@ -12,10 +11,20 @@
     >
       <b-card-text>
         <p>
-          Đây là thông tin
+          For more ways for you to reach us:
         </p>
         <p>
-          Đây là thông tin
+          <b>
+            dsc.dut@gmail.com
+          </b>
+        </p>
+        <p>
+          <a href="#">fb.com/dscdut/ </a>
+        </p>
+        <p>
+          <b>
+            (+84) 976 76 60 89
+          </b>
         </p>
       </b-card-text>
     </b-card>
@@ -57,7 +66,7 @@ export default {
 .container {
   right: 0;
   position: fixed;
-  width: 20%;
+  width: fit-content;
   z-index: 2;
   transition-duration: 0.5s;
   transform: translateX(0%);
@@ -66,7 +75,7 @@ export default {
 }
 .container-hidden {
   position: fixed;
-  width: 20%;
+  width: fit-content;
   z-index: 2;
   transition-duration: 0.3s;
   right: 0;
@@ -74,14 +83,7 @@ export default {
 }
 @media (max-width: 992px) {
   .container {
-    right: 0;
-    position: fixed;
-    width: 40%;
-    z-index: 2;
-    transition-duration: 0.5s;
-    transform: translateX(0%);
-    text-color: white;
-    font-size: 22px;
+    height: fit-content;
   }
 }
 </style>
