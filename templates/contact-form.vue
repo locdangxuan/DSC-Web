@@ -34,9 +34,9 @@ export default {
 .form {
   width: 40%;
   height: auto;
-  margin: 4px solid red;
   position: absolute;
-  left: 10%;
+  left: 0%;
+  margin: auto;
 }
 .space-icon {
   position: absolute;
@@ -47,7 +47,7 @@ export default {
 .map {
   position: absolute;
   height: 100%;
-  width: 40%;
+  width: 60%;
   right: 0;
   transition-duration: 0.5s;
 }
@@ -64,7 +64,7 @@ export default {
     height: 100%;
   }
   .form {
-    width: 80%;
+    width: 100%;
     float: left;
     position: relative;
     margin-bottom: 10%;

@@ -10,7 +10,7 @@ export default {
 
 <style lang="scss" scoped>
 .contact-icon-space-shuttle-img {
-  background: url("~assets/img/common/space-shuttle-icon.svg");
+  background: url("~assets/img/contact/space-shuttle-icon.svg");
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   background-size: cover;

@@ -73,7 +73,7 @@ export default {
   height: auto;
 }
 .background {
-  background: url("~assets/img/common/Rectangle-193.svg");
+  background: url("~assets/img/contact/Rectangle-193.svg");
   background-size: cover;
   width: 50px;
   height: 100%;
@@ -81,7 +81,7 @@ export default {
   float: left;
 }
 .icon {
-  background: url("~assets/img/common/Person.svg");
+  background: url("~assets/img/contact/Person.svg");
   background-size: cover;
   left: 15%;
   width: 65%;
@@ -90,7 +90,7 @@ export default {
   top: 12%;
 }
 .icon-email-container {
-  background: url("~assets/img/common/Rectangle-195.svg");
+  background: url("~assets/img/contact/Rectangle-195.svg");
   background-size: cover;
   width: 70%;
   height: 60%;
@@ -100,7 +100,7 @@ export default {
 }
 
 .icon-email {
-  background: url("~assets/img/common/Polygon-4.svg");
+  background: url("~assets/img/contact/Polygon-4.svg");
   background-size: cover;
   left: 3%;
   width: 100%;
