@@ -19,20 +19,22 @@
 }
 .team-button-label {
   color: white;
-  font-size: 48px;
+  font-size: 24px;
   font-weight: bold;
+  font-family: Itim;
   text-align: center;
   position: absolute;
   top: 0;
   left: 50%;
-  opacity: 0;
-  transform: translate(-50%, 0%);
+  opacity: 0.4;
+  transform: translate(-50%, -100%);
   transition-duration: 0.3s;
 }
 .team-button:hover {
   transform: scale(1);
   .team-button-label {
     opacity: 1;
+    font-size: 48px;
     transform: translate(-50%, -100%);
   }
 }

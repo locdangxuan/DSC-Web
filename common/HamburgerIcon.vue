@@ -20,9 +20,11 @@ export default {
       if (this.clickState) {
         this.className = "hamburger-menu active"
         this.$bus.$emit("activateNavbar")
+        // To Navbar.vue
       } else {
         this.className = "hamburger-menu"
         this.$bus.$emit("deactivateNavbar")
+        // To Navbar.vue
       }
     }
   }

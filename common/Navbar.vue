@@ -21,61 +21,65 @@
           :class="navItemClass"
           style="transition-duration: 0.3s"
         >
-          <nuxt-link to="/blogs">
+          <ProLink :delay="1000" :to="'/blogs'" :emit="'igniteRocket'">
             <b-button variant="outline-light" class="navbar-button">
               {{ $t("home.blogs") }}
             </b-button>
-          </nuxt-link>
+          </ProLink>
         </b-nav-item>
         <b-nav-item
           v-if="this.$route.path != '/products'"
           :class="navItemClass"
           style="transition-duration: 0.3s"
         >
-          <nuxt-link to="/products">
+          <ProLink :delay="1000" :to="'/products'" :emit="'igniteRocket'">
             <b-button variant="outline-light" class="navbar-button">
               {{ $t("home.products") }}
             </b-button>
-          </nuxt-link>
+          </ProLink>
         </b-nav-item>
         <b-nav-item
           v-if="this.$route.path != '/events'"
           :class="navItemClass"
           style="transition-duration: 0.3s"
         >
-          <nuxt-link to="/events">
+          <ProLink :delay="1000" :to="'/events'" :emit="'igniteRocket'">
             <b-button variant="outline-light" class="navbar-button">
               {{ $t("home.events") }}
             </b-button>
-          </nuxt-link>
+          </ProLink>
         </b-nav-item>
         <b-nav-item
           v-if="this.$route.path != '/team'"
           :class="navItemClass"
           style="transition-duration: 0.3s"
         >
-          <nuxt-link to="/team">
+          <ProLink :delay="1000" :to="'/team'" :emit="'igniteRocket'">
             <b-button variant="outline-light" class="navbar-button">
               {{ $t("home.team") }}
             </b-button>
-          </nuxt-link>
+          </ProLink>
         </b-nav-item>
       </b-navbar-nav>
       <!--  -->
       <b-navbar-nav class="ml-auto">
         <b-nav-item v-if="this.$route.path != '/pages/introduction'">
-          <nuxt-link to="/pages/introduction">
+          <ProLink
+            :delay="1000"
+            :to="'/pages/introduction'"
+            :emit="'igniteRocket'"
+          >
             <b-button variant="outline-light" class="navbar-button">
               {{ $t("common.introduction") }}
             </b-button>
-          </nuxt-link>
+          </ProLink>
         </b-nav-item>
         <b-nav-item v-if="this.$route.path != '/pages/contact'">
-          <nuxt-link to="/pages/contact">
+          <ProLink :delay="1000" :to="'/pages/contact'" :emit="'igniteRocket'">
             <b-button variant="outline-light" class="navbar-button">
               {{ $t("common.contact") }}
             </b-button>
-          </nuxt-link>
+          </ProLink>
         </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
@@ -96,10 +100,12 @@ export default {
   },
   created() {
     this.$bus.$on("activateNavbar", () => {
+      // From HamburgerIcon.vue
       this.navBarClass = "navbar-shown"
       this.navItemClass = "navbar-shown-item"
     })
     this.$bus.$on("deactivateNavbar", () => {
+      // From HamburgerIcon.vue
       this.navBarClass = "navbar-hidden"
       this.navItemClass = "navbar-hidden-item"
     })
