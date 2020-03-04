@@ -30,4 +30,9 @@
     height: 100vh;
   }
 }
+@media (max-width: 576px) {
+  .home-button-img {
+    display: none;
+  }
+}
 </style>
