@@ -9,7 +9,7 @@
   height: 600px;
   width: 630px;
   position: absolute;
-  transform: scale(0.8) translate(-50%, 12.5%);
+  transform: scale(0.7) translate(-50%, 12.5%);
   transition-duration: 0.3s;
   cursor: pointer;
   bottom: 0;
@@ -28,6 +28,7 @@
   .home-button {
     position: relative;
     height: 100vh;
+    transform: scale(0.7) translate(-50%, 20.5%);
   }
 }
 @media (max-width: 576px) {
