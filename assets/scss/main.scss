@@ -49,10 +49,26 @@
     src: url(~assets/fonts/Sofia_Pro_Soft_Bold.ttf);
     font-weight: bold;
 }
-* {
-    font-family: 'Sofia';
-}
 // End Sofia Pro
+// Google Sans Pro
+@font-face {
+    font-family: 'Google';
+    src: url(~assets/fonts/GoogleSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Google';
+    src: url(~assets/fonts/GoogleSans-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Google';
+    src: url(~assets/fonts/GoogleSans-Bold.ttf);
+    font-weight: bold;
+}
+// End Google Sans Pro
+* {
+    font-family: 'Google';
+}
 
 .font-itim {
     font-family: Itim !important;
