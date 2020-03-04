@@ -1,7 +1,9 @@
 <template>
   <div :class="productButtonClass">
     <div class="products-button-label">
-      {{ $t("home.products") }}
+      <p>
+        {{ $t("home.products") }}
+      </p>
     </div>
     <div class="products-button-img" />
   </div>
@@ -56,23 +58,34 @@ export default {
   }
 }
 .products-button-label {
-  color: white;
-  font-size: 24px;
-  font-family: Itim;
-  font-weight: bold;
-  text-align: center;
+  width: 150px;
+  height: 50px;
   position: absolute;
   top: 50%;
-  left: 0;
-  opacity: 0.4;
-  transform: translate(-100%, -50%);
+  left: 0%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background: url(~assets/img/home/bubbles/danger/bubble-danger-left.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -10px;
+  border-radius: 5px;
+  overflow: hidden;
   transition-duration: 0.3s;
+  p {
+    margin: 0;
+    color: rgb(4, 4, 53);
+    font-family: Google;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+  }
 }
 .products-button:hover {
-  transform: scale(1);
   .products-button-label {
     opacity: 1;
-    font-size: 48px;
+    transform: translate(-100%, -50%);
   }
 }
 .products-button-img {
@@ -95,7 +108,12 @@ export default {
   .products-button-label {
     position: initial;
     opacity: 1;
-    transform: translate(0, 240px);
+    margin: auto;
+    transform: translateY(calc(-100% - 1rem));
+    background: url(~assets/img/home/bubbles/danger/bubble-danger-bottom.svg);
+    background-repeat: no-repeat;
+    background-position-y: -10px;
+    background-position-x: center;
   }
 }
 </style>

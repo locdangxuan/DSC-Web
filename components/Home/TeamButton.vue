@@ -1,7 +1,9 @@
 <template>
   <div class="team-button stick-to-bottom">
     <div class="team-button-label">
-      {{ $t("home.team") }}
+      <p>
+        {{ $t("home.team") }}
+      </p>
     </div>
     <div class="team-button-img" />
   </div>
@@ -18,24 +20,34 @@
   cursor: pointer;
 }
 .team-button-label {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: Itim;
-  text-align: center;
+  width: 150px;
+  height: 50px;
   position: absolute;
   top: 0;
-  left: 50%;
-  opacity: 0.4;
-  transform: translate(-50%, -100%);
+  left: 0;
+  opacity: 0;
+  transform: translateY(0);
+  background: url(~assets/img/home/bubbles/success/bubble-success-top.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 0px;
+  border-radius: 5px;
+  overflow: hidden;
   transition-duration: 0.3s;
+  p {
+    margin: 0;
+    color: rgb(4, 4, 53);
+    font-family: Google;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+  }
 }
 .team-button:hover {
-  transform: scale(1);
   .team-button-label {
     opacity: 1;
-    font-size: 48px;
-    transform: translate(-50%, -100%);
+    transform: translateY(calc(-100% - 1rem));
   }
 }
 .team-button-img {
@@ -57,7 +69,12 @@
   .team-button-label {
     position: initial;
     opacity: 1;
-    transform: translate(0, 170px);
+    margin: auto;
+    transform: translateY(calc(-100% - 1rem));
+    background: url(~assets/img/home/bubbles/success/bubble-success-bottom.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -10px;
   }
 }
 </style>

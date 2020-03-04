@@ -1,7 +1,9 @@
 <template>
   <div class="blogs-button stick-to-bottom">
     <div class="blogs-button-label">
-      {{ $t("home.blogs") }}
+      <p>
+        {{ $t("home.blogs") }}
+      </p>
     </div>
     <div class="blogs-button-img" />
   </div>
@@ -18,24 +20,34 @@
   cursor: pointer;
 }
 .blogs-button-label {
-  color: white;
-  font-family: Itim;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
+  width: 150px;
+  height: 50px;
   position: absolute;
   top: 0;
-  left: 50%;
-  opacity: 0.4;
-  transform: translate(-50%, -100%);
+  left: 0;
+  opacity: 0;
+  transform: translateY(0);
+  background: url(~assets/img/home/bubbles/info/bubble-info-bottom.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -10px;
+  border-radius: 5px;
+  overflow: hidden;
   transition-duration: 0.3s;
+  p {
+    margin: 0;
+    color: rgb(4, 4, 53);
+    font-family: Google;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+  }
 }
 .blogs-button:hover {
-  transform: scale(1) translate(-50%, 0);
   .blogs-button-label {
     opacity: 1;
-    font-size: 48px;
-    transform: translate(-50%, -100%);
+    transform: translateY(calc(-100% - 1rem));
   }
 }
 .blogs-button-img {
@@ -57,7 +69,7 @@
   .blogs-button-label {
     position: initial;
     opacity: 1;
-    transform: translate(0, 170px);
+    transform: translateY(calc(-100% - 1rem));
   }
 }
 </style>

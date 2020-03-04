@@ -1,7 +1,9 @@
 <template>
   <div class="events-button">
     <div class="events-button-label">
-      {{ $t("home.events") }}
+      <p>
+        {{ $t("home.events") }}
+      </p>
     </div>
     <div class="events-button-img" />
   </div>
@@ -28,24 +30,34 @@ export default {
   cursor: pointer;
 }
 .events-button-label {
-  color: white;
-  font-size: 24px;
-  font-family: Itim;
-  font-weight: bold;
-  text-align: center;
+  width: 150px;
+  height: 50px;
   position: absolute;
   top: 50%;
-  left: 100%;
-  opacity: 0.4;
-  transform: translate(0%, 0%);
+  left: 50%;
+  opacity: 0;
+  transform: translate(0, 0);
+  background: url(~assets/img/home/bubbles/warning/bubble-warning-right.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -10px;
+  border-radius: 5px;
+  overflow: hidden;
   transition-duration: 0.3s;
+  p {
+    margin: 0;
+    color: rgb(4, 4, 53);
+    font-family: Google;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+  }
 }
 .events-button:hover {
-  transform: scale(1) translate(50%, 12.5%);
   .events-button-label {
     opacity: 1;
-    font-size: 48px;
-    transform: translate(0%, -50%);
+    transform: translate(70%, 0);
   }
 }
 .events-button-img {
@@ -68,7 +80,12 @@ export default {
   .events-button-label {
     position: initial;
     opacity: 1;
-    transform: translate(0%, 200px);
+    margin: auto;
+    transform: translateY(calc(-100% - 1rem));
+    background: url(~assets/img/home/bubbles/warning/bubble-warning-bottom.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -10px;
   }
 }
 </style>
