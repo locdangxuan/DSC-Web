@@ -6,9 +6,10 @@
 </template>
 <style lang="scss" scoped>
 .errorContent {
-  // font-family: "Google";
   width: 300px;
   height: 210px;
+  // background: url(~assets/img/error/404.svg);
+  background-size: cover;
   right: 10rem;
   top: 5rem;
   position: absolute;
@@ -39,7 +40,7 @@
     width: 200px;
     height: 170px;
     position: absolute;
-    right: 5rem;
+    right: 2rem;
     top: 10rem;
   }
 }
