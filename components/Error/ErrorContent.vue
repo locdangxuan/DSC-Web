@@ -4,11 +4,15 @@
     <h2>NOT FOUND</h2>
   </div>
 </template>
+<script>
+export default {
+  name: "ContentError"
+}
+</script>
 <style lang="scss" scoped>
 .errorContent {
   width: 300px;
   height: 210px;
-  // background: url(~assets/img/error/404.svg);
   background-size: cover;
   right: 10rem;
   top: 5rem;

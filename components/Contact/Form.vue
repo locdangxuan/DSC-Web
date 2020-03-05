@@ -52,7 +52,7 @@ export default {
 }
 .title-form {
   color: white;
-  font-size: 42px;
+  font-size: 47px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 8%;

@@ -70,7 +70,7 @@ export default {
   z-index: 2;
   transition-duration: 0.5s;
   transform: translateX(0%);
-  text-color: white;
+  color: white;
   font-size: 22px;
 }
 .container-hidden {
