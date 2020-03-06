@@ -9,7 +9,7 @@
   height: 600px;
   width: 630px;
   position: absolute;
-  transform: scale(0.7) translate(-50%, 12.5%);
+  transform: scale(0.7) translate(-73%, 12.5%);
   transition-duration: 0.3s;
   cursor: pointer;
   bottom: 0;
