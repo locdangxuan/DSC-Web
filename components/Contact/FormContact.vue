@@ -54,7 +54,7 @@ export default {
 }
 .title-form {
   color: white;
-  font-size: 3.7vw;
+  font-size: 3.6vw;
   font-weight: bold;
   text-align: center;
   margin-bottom: 8%;
@@ -132,6 +132,9 @@ export default {
   .content-form {
     width: 107%;
   }
+  .title-form {
+    font-size: 60px;
+  }
 }
 @media (max-width: 768px) {
   .content-form {
@@ -140,10 +143,16 @@ export default {
   .content {
     width: 100%;
   }
+  .title-form {
+    font-size: 55px;
+  }
 }
 @media (max-width: 576px) {
   .content-form {
     width: 110%;
+  }
+  .title-form {
+    font-size: 10.3vw;
   }
 }
 </style>
